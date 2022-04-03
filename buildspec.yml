@@ -1,12 +1,11 @@
 version: 0.2
 
-env:
-  variables:
-    JAVA_HOME: "/usr/bin/java/java-11-openjdk-amd64"
 
 phases:
   install:
     commands:
+    - export JAVA_HOME=/usr/bin/java/java-11-openjdk-amd64 > ~/.bashrc
+    - export PATH=$JAVA_HOME/bin:$PATH >> ~/.bashrc
     - whereis java
     - java -version
     - echo $JAVA_HOME
