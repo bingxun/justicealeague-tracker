@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    JAVA_HOME: "/usr/bin/java/java-8-openjdk-amd64"
+    JAVA_HOME: "/usr/bin/java/java-11-openjdk-amd64"
 
 phases:
   install:
